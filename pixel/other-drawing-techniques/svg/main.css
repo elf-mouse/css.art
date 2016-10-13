@@ -1,0 +1,117 @@
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  12.5% {
+    transform: translateX(-2px);
+  }
+  37.5% {
+    transform: translateX(2px);
+  }
+  62.5% {
+    transform: translateX(-2px);
+  }
+  87.5% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.Shake {
+  -webkit-animation: shake 400ms infinite;
+  -moz-animation: shake 400ms infinite;
+  -o-animation: shake 400ms infinite;
+  animation: shake 400ms infinite;
+}
+
+.Rougit {
+  fill: #ffd7d2;
+  transition: all 3s linear;
+}
+
+.Rougit_2 {
+  fill: #ffbfb6;
+  transition: all 3s linear;
+}
+
+.Rougit_3 {
+  fill: #fa8879;
+  transition: all 3s linear;
+}
+
+.Rougit_3_nez {
+  fill: #ff5e49;
+  transition: all 3s linear;
+}
+
+.Rougit_3_cheveux {
+  fill: #ff6f3d;
+  transition: all 3s linear;
+}
+
+.st1 {
+  fill: #84B971;
+}
+
+.st2 {
+  fill: #1D1D1B;
+}
+
+.st3 {
+  fill: #ECCDB6;
+}
+
+.st4 {
+  fill: #8A7551;
+}
+
+.st5 {
+  fill: #BAAE97;
+}
+
+.st6 {
+  fill: #BCAC81;
+}
+
+.st7 {
+  fill: #252323;
+}
+
+.st8 {
+  fill: #C29B76;
+}
+
+.st9 {
+  fill: #978058;
+}
+
+.st10 {
+  fill: #C7B594;
+}
+
+.st11 {
+  fill: #FFE9DD;
+}
+
+.st12 {
+  fill: #FFFFFF;
+}
+
+.st13 {
+  display: none;
+  fill: #84B971;
+}
+
+.st14 {
+  fill: #D8C7A0;
+}
+
+.st15 {
+  fill: #A1885C;
+}
+
+.pixelme {
+  margin-left: 40%;
+}

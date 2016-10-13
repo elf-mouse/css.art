@@ -1,0 +1,115 @@
+$monochrome: false;
+$pixel-size: 8px;
+
+// Colored
+$ash-line: #181818;
+$ash-hat: #e31613;
+$ash-hat-front: #f7f7f7;
+$ash-skin: #f0c3aa;
+$ash-mouth: #f0c3aa;
+$ash-backpack: #037efb;
+$ash-shoes: #ffffff;
+
+$pikachu-line: #181818;
+$pikachu-body: #fefe00;
+$pikachu-tail: #823e00;
+$pikachu-cheek: #fe4100;
+
+// Monochrome colors
+@if $monochrome {
+  $ash-line: #181818;
+  $ash-hat: #cdcdcd;
+  $ash-hat-front: #f9f9f9;
+  $ash-skin: #fdfdfd;
+  $ash-mouth: #cdcdcd;
+  $ash-backpack: #cdcdcd;
+  $ash-shoes: #cdcdcd;
+
+  $pikachu-line: #181818;
+  $pikachu-body: #f8f8f8;
+  $pikachu-cheek: #c0c0c0;
+  $pikachu-tail: #c0c0c0;
+}
+
+$ash: (
+  frames: (
+    "             ""   ██████    ",
+    "   ██████    ""  █▓▓▓▓▓▓█   ",
+    "  █▓▓▓▓▓▓█   "" █▓▓▓▓▓▓▓▓█  ",
+    " █▓▓▓▓▓▓▓▓█  "" █▓▓▓▓▓▓▓`██ ",
+    " █▓▓▓▓▓▓▓`██ ""███▓▓▓▓▓````█",
+    "███▓▓▓▓▓````█""███████▓▓▓██ ",
+    "███████▓▓▓██ ""██████░░█░█  ",
+    "██████░░█░█  "" ██░░█░░█░█  ",
+    " ██░░█░░█░█  ""  █░░░░░░░█  ",
+    "  █░░░░░░░█  "" █▒██░░░O█   ",
+    " █▒██░░░O█   "" █▒▒█████    ",
+    " █▒██████    "" █▒█░░██     ",
+    " ██░░██████  "" █▒█░░██     ",
+    "█|█░░█||█||█ ""  ████||█    ",
+    "█||█████||█  ""   █||||█    ",
+    " ██    ███   ""    ████     "
+  ),
+  colors: (
+    "█": $ash-line,
+    "▓": $ash-hat,
+    "`": $ash-hat-front,
+    "░": $ash-skin,
+    "▒": $ash-backpack,
+    "O": $ash-mouth,
+    "|": $ash-shoes
+  ),
+  speed: .2s
+);
+
+$pikachu: (
+  frames: (
+    "               ""               ",
+    "    ██         ""               ",
+    "█████████      ""    ██         ",
+    "█░░░███░░███   ""█████████      ",
+    " █░░░█░░░░░░█  ""█░░░███░░███   ",
+    "  █░░██░░░░░░█ "" █░░░█░░░░░░█  ",
+    "   █░░█░░░░░░█ ""  █░░██░░░░░░█ ",
+    " ███░█░░░░░█░░█""   █░░█░░░░░░█ ",
+    " █░░██░░░O░░░░█"" ███░█░░░░░█░░█",
+    "  █▒█▒▒▒░░░░░█ "" █░░░█░░░O░░░░█",
+    " █▒▒█░░░░░░█░█ ""  █▒█▒▒▒░░░░░█ ",
+    "  █▒█▒▒▒░░██░█ "" █▒▒█░░░░░░█░█ ",
+    "   ███░░░░░░██ ""  █▒█▒▒▒░░██░█ ",
+    "   █░██░░░░█░░█""   ███░░░░░░░█ ",
+    "    █░░████ ██ ""      ██░░░██  ",
+    "     ██        ""        ███    "
+  ),
+  colors: (
+    "█": $pikachu-line,
+    "░": $pikachu-body,
+    "▒": $pikachu-tail,
+    "O": $pikachu-cheek
+  ),
+  speed: .1s
+);
+
+// TODO: @mixin pixel-art
+// @include pixel-art((
+//   ash: $ash,
+//   pikachu: $pikachu
+// ), (
+//   pixel-size: $pixel-size
+// ));
+
+
+// Centering Ash and Pikachu
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ash, #pikachu {
+  margin: 0 $pixel-size * 2;
+}

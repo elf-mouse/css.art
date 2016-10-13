@@ -1,0 +1,17 @@
+div {
+  background: #000;
+  width: 10px;
+  height: 10px;
+  box-shadow: 10px 10px red, -10px 10px orange;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

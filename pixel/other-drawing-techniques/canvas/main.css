@@ -1,0 +1,10 @@
+body {
+  background-color: #333333;
+}
+
+#ark {
+  width: 136px;
+  height: 248px;
+  margin: 20px auto;
+  display: block;
+}
